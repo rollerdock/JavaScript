@@ -27,7 +27,7 @@
 //* un arreglo.
 
 const regitrarUsuario (nombre,correo, ...datosAdicionales) => {
-    console.log(nombre,correo);
+    console.log(nombre,correo,datosAdicionales);
 };
 
 regitrarUsuario('Carlos','correo@gmail.com');
