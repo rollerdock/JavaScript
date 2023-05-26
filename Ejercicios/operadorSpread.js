@@ -22,13 +22,63 @@
 // console.log(datosLogin);
 
 //! Parametros Rest "..."
-//* Permite que una función contenga un número indefinido 
+//* Permite que una función contenga un número indefinido
 //* de argumentos.Los argumentos extra los convertirá en
 //* un arreglo.
 
-const regitrarUsuario (nombre,correo, ...datosAdicionales) => {
-    console.log(nombre,correo,datosAdicionales);
+// const regitrarUsuario = (nombre, correo, ...datosAdicionales) => {
+//   console.log(nombre, correo, datosAdicionales);
+// };
+
+// regitrarUsuario(
+//   "Carlos",
+//   "correo@gmail.com",
+//   28,
+//   "España",
+//   "hombre",
+//   "1.80",
+//   true,
+//   43,
+//   "socio"
+// );
+// regitrarUsuario(
+//   "alejandro",
+//   "alex@correo.com",
+//   28,
+//   "España",
+//   "hombre",
+//   "1.80",
+//   true,
+//   43,
+//   "socio"
+// );
+
+//! Destructuración de objetos
+//* nos permite obtener elementos de un arreglo y guardarlo en variable
+
+const amigos = ["Alejandro", "Cesar", "Manuel"];
+// const primerAmigo = amigos[0];
+// const segundoAmigo = amigos[1];
+const [primerAmigo, segundoAmigo, tercerAmigo] = amigos;
+console.log(primerAmigo);
+
+const persona = {
+  nombre: "alejandro",
+  correo: "alex@correo.com",
+  edad: 28,
+  pais: "España",
+  sexo: "hombre",
+  altura: "1.80",
+  alta: true,
+  peso: 43,
+  socio: "socio",
 };
 
-regitrarUsuario('Carlos','correo@gmail.com');
-regitrarUsuario('alejandro','alex@correo.com',28,'España');
+console.log(persona.nombre, persona.pais);
+
+const mostrarEdad = ({ nombre, edad }) => {
+  //* ({ nombre, edad }) entre llaves para seleccionar los valores del objeto.
+  console.log(nombre, edad);
+};
+
+mostrarEdad(persona); //* le paso el objeto entero
