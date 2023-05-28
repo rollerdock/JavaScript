@@ -1,4 +1,5 @@
 # JavaScript
+
 Ejercicios de JavaScript
 
-Del curso javascript moderno
+Del curso : Curso Completo, Práctico y desde Cero
