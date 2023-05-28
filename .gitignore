@@ -1,4 +1,5 @@
 # Archivos de configuración
+.gitignore
 *.env
 .env.local
 .env.development.local
